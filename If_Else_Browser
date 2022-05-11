@@ -3,10 +3,10 @@ if  (browser == 'Edge') {
     alert ('Great');
 }
 else if  (browser == 'Chrome') {
-        alert ('Красава');
+        alert ('Хром');
 }
 else if  (browser == 'Safari') {
-        alert ('Санкционный');
+        alert ('Сафари');
 }
 else {
     alert ('Напиши правильно');
