@@ -1,0 +1,13 @@
+let browser = prompt ('Введите название браузера');
+if  (browser == 'Edge') {
+    alert ('Great');
+}
+else if  (browser == 'Chrome') {
+        alert ('Красава');
+}
+else if  (browser == 'Safari') {
+        alert ('Санкционный');
+}
+else {
+    alert ('Напиши правильно');
+}
