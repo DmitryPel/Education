@@ -1,0 +1,12 @@
+var sum = +prompt('Введите сумму вклада в рублях');
+var percent = +prompt ('Введите годовой процент');
+percent = percent / 100;
+var maxYear = 5;
+var year_1 = sum;
+
+for( var year = 1; year <= maxYear; year++) {
+
+year_1 = parseInt((year_1 * percent) + year_1);
+alert (`Ваша прибыль за ${year} год составит: ${year_1-sum} рублей`);
+
+}
