@@ -1,0 +1,25 @@
+var answerMystery = 'Заяц';
+var answer = prompt('Отгадайте загадку: Зимой и летом одним цветом, кто это?');
+var maxTryCount = 3
+    for (var tryCount =1; tryCount < maxTryCount; tryCount++) {
+        if (answer == answerMystery) {
+        alert ('Правильно!');
+        break;
+        }
+        else if (answer == null || answer == 'Отмена') {
+            alert ('Отмена');
+            break;
+        }
+        else {
+        alert ('Неверно');
+        }
+        answer = prompt('Попробуйте еще раз. У Вас осталось ' + (maxTryCount-tryCount) + ' попыток! \nЗимой и летом одним цветом, кто это?');
+
+            if (maxTryCount == tryCount || answer == answerMystery) {
+                alert ('Правильно! Вы угадали');
+                break;
+            }
+    }
+    if (maxTryCount == tryCount) {    
+    alert ('Вы проиграли, правильный ответ: Заяц!');
+    }
